@@ -1,1 +1,3 @@
 from CatvsDogClassifier.components.data_ingestion import DataIngestion
+
+from CatvsDogClassifier.components.prepare_base_model import PrepareBaseModel
