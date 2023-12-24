@@ -1,0 +1,1 @@
+from CatvsDogClassifier.entity.config_entity import (DataIngestionConfig)

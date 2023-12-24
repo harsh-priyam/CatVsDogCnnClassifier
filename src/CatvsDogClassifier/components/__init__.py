@@ -1,0 +1,1 @@
+from CatvsDogClassifier.components.data_ingestion import DataIngestion
