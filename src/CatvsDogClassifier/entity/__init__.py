@@ -1,1 +1,1 @@
-from CatvsDogClassifier.entity.config_entity import (DataIngestionConfig,PrepareBaseModelConfig)
+from CatvsDogClassifier.entity.config_entity import (DataIngestionConfig,PrepareBaseModelConfig,PrepareCallbacksConfig)
