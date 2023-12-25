@@ -6,3 +6,5 @@ from CatvsDogClassifier.components.prepare_base_model import PrepareBaseModel
 from CatvsDogClassifier.components.prepare_callbacks import PrepareCallback
 
 from CatvsDogClassifier.components.training import Training
+
+from CatvsDogClassifier.components.evaluation import Evaluation

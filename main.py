@@ -1,6 +1,7 @@
 from CatvsDogClassifier.pipeline.stage01_data_ingestion import DataIngestionTrainingPipeline
 from CatvsDogClassifier.pipeline.stage02_prepare_base_model import PrepareBaseModelTrainingPipeline
 from CatvsDogClassifier.pipeline.stage03_training import ModelTrainingPipeline
+from CatvsDogClassifier.pipeline.stage04_model_evaluation import EvaluationPipeline
 
 from CatvsDogClassifier import logger
 
@@ -36,6 +37,19 @@ try:
     logger.info(f">>>>>>> stage {STAGE_NAME} started <<<<<<")
     model_trainer = ModelTrainingPipeline()
     model_trainer.main()
+    logger.info(f">>>>> stage {STAGE_NAME} completed <<<<\n\nx===========x")
+
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+
+STAGE_NAME = "Evaluation Stage"
+try:
+    logger.info(f"********************")
+    logger.info(f">>>>>>> stage {STAGE_NAME} started <<<<<<")
+    model_evaluation = EvaluationPipeline()
+    model_evaluation.main()
     logger.info(f">>>>> stage {STAGE_NAME} completed <<<<\n\nx===========x")
 
 except Exception as e:
